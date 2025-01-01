@@ -1,0 +1,7 @@
+pubsub
+meshtastic
+model2vec
+pydantic
+numpy
+markdownify
+zstandard
