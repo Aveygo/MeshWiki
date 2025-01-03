@@ -41,7 +41,7 @@ class Searcher:
             potion_location:str="minishlab/potion-base-8M"
         ):
         self.zim = ZIMFile(zim_location, encoding="utf-8")
-        self.db = sqlite3.connect(index_location)
+        self.db = sqlite3.connect(index_location, check_same_thread=False)
         self.model = StaticModel.from_pretrained(potion_location)
         self.locked = False
         
